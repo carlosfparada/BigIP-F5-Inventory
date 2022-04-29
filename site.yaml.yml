@@ -10,11 +10,13 @@ all:
       ansible_host: 172.16.1.200
       hostname: webserver-1
       private_ip: 172.16.1.200
+      port: 80
       f5_pool_member: www_pool1
     webserver-2:
       ansible_host: 172.16.1.199
       hostname: webserver-2
       private_ip: 172.16.1.199
+      port: 80
       f5_pool_member: www_pool1
     tower:
       ansible_host: 172.16.1.9
@@ -22,11 +24,13 @@ all:
       ansible_host: 172.16.2.200
       hostname: webserver-21
       private_ip: 10.10.11.11
+      port: 80
       f5_pool_member: www_pool2
     webserver-22:
       ansible_host: 172.16.2.199
       hostname: webserver-22
       private_ip: 10.10.11.12
+      port: 80
       f5_pool_member: www_pool2
   children:
     f5:
@@ -39,7 +43,7 @@ all:
         webserver-21:
         webserver-22:
         tower:
-    function_webserver:
+    webserver:
       hosts: 
         webserver-1:
         webserver-2:
