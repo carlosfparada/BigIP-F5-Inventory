@@ -44,7 +44,7 @@ all:
         webserver-22:
         tower:
     webserver:
-      hosts: 
+      hosts:
         webserver-1:
         webserver-2:
         webserver-21:
