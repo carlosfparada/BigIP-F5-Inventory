@@ -5,21 +5,21 @@
 all: 
   hosts: 
     f5-bigip-1:
-      ansible_host: 172.16.1.201
+      ansible_host: 172.16.2.201
     webserver-1:
-      ansible_host: 172.16.1.200
+      ansible_host: 172.16.2.200
       hostname: webserver-1
-      private_ip: 172.16.1.200
+      private_ip: 172.16.2.200
       port: 80
       f5_pool_member: www_pool1
     webserver-2:
-      ansible_host: 172.16.1.199
+      ansible_host: 172.16.2.199
       hostname: webserver-2
-      private_ip: 172.16.1.199
+      private_ip: 172.16.2.199
       port: 80
       f5_pool_member: www_pool1
     tower:
-      ansible_host: 172.16.1.9
+      ansible_host: 172.16.1.45
     webserver-21:
       ansible_host: 172.16.2.200
       hostname: webserver-21
