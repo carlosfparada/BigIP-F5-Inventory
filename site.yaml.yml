@@ -21,13 +21,13 @@ all:
     tower:
       ansible_host: 172.16.1.45
     webserver-21:
-      ansible_host: 172.16.2.200
+      ansible_host: 172.16.2.198
       hostname: webserver-21
       private_ip: 10.10.11.11
       port: 80
       f5_pool_member: www_pool2
     webserver-22:
-      ansible_host: 172.16.2.199
+      ansible_host: 172.16.2.197
       hostname: webserver-22
       private_ip: 10.10.11.12
       port: 80
